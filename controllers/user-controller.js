@@ -71,7 +71,7 @@ const userController = {
       )
         .then((dbUserData) => {
           if (!dbUserData) {
-            res.status(404).json({ message: 'Sorry! No user found.' });
+            res.status(404).json({ message: 'Sorry! No add friend.' });
             return;
           }
           res.json(dbUserData);
@@ -88,7 +88,7 @@ const userController = {
       )
         .then((dbUserData) => {
           if (!dbUserData) {
-            res.status(404).json({ message: 'Sorry! No user found.' });
+            res.status(404).json({ message: 'Sorry! Could not delete friend.' });
             return;
           }
           res.json(dbUserData);
